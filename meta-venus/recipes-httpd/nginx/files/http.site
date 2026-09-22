@@ -86,6 +86,9 @@ server {
         add_header Vary "Content-Encoding, Access-Control-Allow-Origin, Access-Control-Allow-Credentials";
     }
 
+    # Routes generated and activated by the venus-web-pages service.
+    include /run/venus-web-pages/proxy/*.conf;
+
     location ~ \.php$ {
         try_files $uri =404;
         fastcgi_pass unix:/var/run/php5-fpm.socket;
