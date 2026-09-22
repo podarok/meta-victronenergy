@@ -88,6 +88,7 @@ server {
 
     # Routes generated and activated by the venus-web-pages service.
     include /run/venus-web-pages/proxy/*.conf;
+    include /etc/nginx/locations-enabled/*.conf;
 
     location ~ \.php$ {
         try_files $uri =404;
