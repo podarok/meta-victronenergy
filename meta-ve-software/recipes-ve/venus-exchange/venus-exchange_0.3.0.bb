@@ -6,9 +6,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=e32777d272d59cf1a64aed9ee0ad1fc1"
 
 SRC_URI = " \
     gitsm://github.com/nmbath/venus-exchange.git;branch=main;protocol=ssh;user=git \
-    file://0001-nginx-enlarge-request-zone.patch \
 "
-SRCREV = "79163c928a303b3b50ffb2f1cd5c501ebd3b3dfa"
+SRCREV = "1aa1fc5d07bc3e66cb582a8a06a53c7d0b192d06"
 S = "${WORKDIR}/git"
 
 inherit allarch daemontools python-compile useradd ve_package

@@ -35,7 +35,7 @@ SRC_URI = " \
     gitsm://github.com/nmbath/gui-v2.git;branch=mbath/containers;protocol=ssh;user=git \
     file://0001-cmake-use-CMAKE_CROSSCOMPILING-for-desktop-build-de.patch \
 "
-SRCREV = "cae01010f599c3d773b377114bcf0dcdef183efa"
+SRCREV = "3d8655454e4a17816c58e28513aad43381addeb3"
 S = "${WORKDIR}/git"
 
 do_install:append() {
@@ -44,4 +44,3 @@ do_install:append() {
     # causing a standard 'rm' command to fail with a "No such file or directory" error.
     rm -rf ${D}/usr
 }
-
